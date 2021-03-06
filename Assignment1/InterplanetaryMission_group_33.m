@@ -2,14 +2,14 @@
 clc
 clearvars
 close all
-
+tic
 %% Set path to default
 path(pathdef);
 
 % Add [...] folder to path
-addpath(genpath('functions\plots\'));
-addpath(genpath('functions\'));
-addpath(genpath('../Common\'));
+addpath(genpath('functions\plots/'));
+addpath(genpath('functions/'));
+addpath(genpath('../Common/'));
 
 %% Problem definition
 muSun = astroConstants(4);
@@ -389,3 +389,4 @@ set(gca,'FontSize',20)
 % Asymptotes not needed
 hold on;
 PlotObject(Venus.ID)
+toc

@@ -132,7 +132,7 @@ for j = 1 : 3
     if j == 1
         % one period
         tEnd1=T;
-        tEnd2=T_repeating;
+        tEnd2=10*T_repeating;
         tEnd3=T_secular;
     elseif j == 2
         % one day
